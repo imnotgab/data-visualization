@@ -25,15 +25,6 @@ def _(mo):
     """)
     return
 
-
-@app.cell(hide_code=True)
-def _(mo):
-    mo.md(r"""
-    Remember to add **svg.py**  in packages (left side icon - Manage packages) first!!!
-    """)
-    return
-
-
 @app.cell
 def _():
     import marimo as mo
@@ -46,29 +37,15 @@ def _():
 
     return (
         Circle,
-        KMeans,
         Line,
         Rect,
         SVG,
-        StandardScaler,
         Text,
-        go,
-        html,
         math,
         mo,
         np,
         pd,
-        px,
     )
-
-
-@app.cell(hide_code=True)
-def _(mo):
-    mo.md(r"""
-    # Gabriela's code
-    """)
-    return
-
 
 @app.cell
 def _(pd):
