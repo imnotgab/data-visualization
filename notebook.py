@@ -17,6 +17,14 @@ app = marimo.App(
     auto_download=["html"],
 )
 
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""
+    # Oumalik Analysis
+    Source data comes from the [Oumalik_Veg_plots (PDF)](https://d3o6w55j8uz1ro.cloudfront.net/s3-d0f68fa49c8cba12794bb586349f2341/ornl-cumulus-prod-public.s3.us-west-2.amazonaws.com/above/Oumalik_Veg_plots/comp/Oumalik_Veg_plots.pdf).
+    """)
+    return
+
 
 @app.cell(hide_code=True)
 def _(mo):
